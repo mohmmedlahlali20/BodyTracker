@@ -7,11 +7,15 @@ import { ScreenContent } from '~/components/ScreenContent';
 export default function Home() {
   return (
     <>
+
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
         <ScreenContent path="app/index.tsx" title="Home" />
-        <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
+        {/* <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
           <Button title="Show Details" />
+        </Link> */}
+        <Link href={{ pathname: '/login'}} asChild>
+          <Button title="Login" />
         </Link>
       </Container>
     </>
